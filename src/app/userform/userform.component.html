@@ -1,0 +1,170 @@
+<!-- Template Variable method -->
+<!-- <div class="mb-3">
+  <label for="firstName" class="form-control">First Name</label>
+  <input
+    #fn
+    type="firstName"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+
+<div class="form-group">
+  <label for="middleName" class="form-control">Middle Name</label>
+  <input
+    #mn
+    type="middleName"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+<div class="form-group">
+  <label for="lastName" class="form-control">Last Name</label>
+  <input
+    #ln
+    type="lastName"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+
+<div class="form-group">
+  <label for="age" class="form-control">Age</label>
+  <input #age type="number" class="form-control" aria-describedby="emailHelp" />
+</div>
+
+<div class="form-group">
+  <label for="address" class="form-control">Street Adress</label>
+  <input
+    #staddr
+    type="address"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+
+<div class="form-group">
+  <label for="city" class="form-control">City</label>
+  <input #city type="city" class="form-control" aria-describedby="emailHelp" />
+</div>
+
+<div class="form-group">
+  <label for="country" class="form-control">Country</label>
+  <input
+    #country
+    type="country"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+
+<div class="form-group">
+  <label for="postalCode" class="form-control">Postal Code</label>
+  <input
+    #postalcode
+    type="postalCode"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+
+<button
+  (click)="
+    displayForm(
+      fn.value,
+      mn.value,
+      ln.value,
+      age.value,
+      staddr.value,
+      city.value,
+      country.value,
+      postalcode.value
+    )
+  "
+  class="btn btn-primary"
+>
+  Submit
+</button>
+ -->
+
+<!-- Two way binging Method -->
+<div class="mb-3">
+  <label for="firstName" class="form-control">First Name</label>
+  <input
+    [(ngModel)]="fn"
+    type="firstName"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+
+<div class="mb-3">
+  <label for="middleName" class="form-control">Middle Name</label>
+  <input
+    [(ngModel)]="mn"
+    type="middleName"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+<div class="mb-3">
+  <label for="lastName" class="form-control">Last Name</label>
+  <input
+    [(ngModel)]="ln"
+    type="lastName"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+
+<div class="mb-3">
+  <label for="age" class="form-control">Age</label>
+  <input
+    [(ngModel)]="age"
+    type="number"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+
+<div class="mb-3">
+  <label for="address" class="form-control">Street Adress</label>
+  <input
+    [(ngModel)]="staddr"
+    type="address"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+
+<div class="mb-3">
+  <label for="city" class="form-control">City</label>
+  <input
+    [(ngModel)]="city"
+    type="city"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+
+<div class="mb-3">
+  <label for="country" class="form-control">Country</label>
+  <input
+    [(ngModel)]="country"
+    type="country"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+
+<div class="mb-3">
+  <label for="postalCode" class="form-control">Postal Code</label>
+  <input
+    [(ngModel)]="postalcode"
+    type="postalCode"
+    class="form-control"
+    aria-describedby="emailHelp"
+  />
+</div>
+
+<button (click)="displayForm()" class="btn btn-primary">Submit</button>

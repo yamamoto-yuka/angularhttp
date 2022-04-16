@@ -1,0 +1,9 @@
+<h1>List of users</h1>
+<div *ngFor="let user of users">
+  <h4>{{ user.username | uppercase }}</h4>
+  <p>Email: {{ user.email }}</p>
+  <!--  currency :通貨 -->
+  <!-- Angular pipes  -->
+  <p>Annual Compensation:{{ compensation | currency: "INR" }}</p>
+  <p>Date Joined: {{ dateJoined | date: "long" }}</p>
+</div>

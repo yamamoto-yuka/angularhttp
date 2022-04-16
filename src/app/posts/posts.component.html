@@ -1,0 +1,13 @@
+<h1>POSTS:</h1>
+
+<label for="postTitle">Enter title:</label>
+<input type="text" [(ngModel)]="postTitle" id="postTitle" />
+<br />
+<label for="postBody">Your post:</label>
+<textarea id="postBody" cols="30" rows="10" [(ngModel)]="postBody"></textarea>
+
+<button (click)="post()">Add post</button>
+<div *ngFor="let post of posts">
+  <h3>{{ post.title | uppercase }}</h3>
+  <p>{{ post.body }}</p>
+</div>
